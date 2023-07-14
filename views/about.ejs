@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR BattleGrounds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/about.css">
+</head>
+
+<body class="d-flex flex-column vh-100" id="about-body">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="https://res.cloudinary.com/dxq1sqhun/image/upload/v1687505901/Untitled-1_v0xjlq.png" alt="" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                VR BattleGround</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="/campgrounds">Battlegrounds</a>
+                    <a class="nav-link" href="/campgrounds/new">New</a>
+                    <a class="nav-link" href="/about">About</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <% if(!currentUser){ %>
+                        <a class="nav-link" href="/login">Login</a>
+                        <a class="nav-link" href="/register">Register</a>
+                        <% }else{ %>
+                            <a class="nav-link" href="/logout">Logout</a>
+                            <% } %>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="about-section">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="text-white">About Us</h1>
+                    <div class="mt-4 mb-5">
+                        <p  class="text-white fs-5">
+                            We are a website that helps you find VR Game Centres in your area. We have a comprehensive list of VR Game
+                            Centres, so you can be sure to find one that is right for you. We also provide information about each VR
+                            Game Centre, such as their location, price, and reviews etc.
+                        </p>
+                        <p class="text-white fs-5">
+                            We are passionate about VR gaming, and we want to make it as easy as possible for people to experience this
+                            amazing technology. We believe that VR has the potential to revolutionize the way we play games, and we want
+                            to help people discover the joy of VR gaming.
+                        </p>
+                    </div>
+                    <a href="/campgrounds" class="btn btn-info">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-dark py-3 mt-auto">
+        <div class="container">
+            <span class="text-muted">&copy;YelpCamp 2023</span>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</html>
